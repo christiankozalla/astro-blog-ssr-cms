@@ -1,6 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { dbClient } from "flat-file-cms";
+import { dbClient } from "astro-markdown-cms";
 
 const posts = (await dbClient.listPosts()).filter((post) => post.hasPublished);
 ---
